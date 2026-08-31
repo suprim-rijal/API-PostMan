@@ -1,0 +1,6 @@
+$kind: http-request
+name: Verify the Item was Deleted
+description: ""
+url: http://localhost:4000/feedback/1
+method: GET
+order: 4483050594001655

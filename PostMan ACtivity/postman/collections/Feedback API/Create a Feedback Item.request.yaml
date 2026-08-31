@@ -1,0 +1,19 @@
+$kind: http-request
+name: Create a Feedback Item
+description: ""
+url: http://localhost:4000/feedback
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \  \"sender\": \"John Smith\",\r
+
+    \  \"message\": \"Great session on React components!\",\r
+
+    \  \"rating\": 5,\r
+
+    \  \"platform\": \"mobile\"\r
+
+    }"
+order: 1788184819542

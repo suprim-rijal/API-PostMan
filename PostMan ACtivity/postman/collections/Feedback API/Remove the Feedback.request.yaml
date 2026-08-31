@@ -1,0 +1,6 @@
+$kind: http-request
+name: Remove the Feedback
+description: ""
+url: http://localhost:4000/feedback/1
+method: DELETE
+order: 4366314375456142
