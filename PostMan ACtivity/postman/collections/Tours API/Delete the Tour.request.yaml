@@ -1,0 +1,6 @@
+$kind: http-request
+name: Delete the Tour
+description: ""
+url: http://localhost:4000/tours/5
+method: DELETE
+order: 4453339220072573

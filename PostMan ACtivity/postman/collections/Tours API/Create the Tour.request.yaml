@@ -1,0 +1,21 @@
+$kind: http-request
+name: Create the Tour
+description: ""
+url: http://localhost:4000/tours
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \  \"name\": \"Best of Paris in 7 Days Tour\",\r
+
+    \  \"info\": \"Paris is synonymous with the finest things that culture can offer — in art, fashion, food, literature, and ideas.\",\r
+
+    \  \"image\": \"https://www.course-api.com/images/tours/tour-1.jpeg\",\r
+
+    \  \"price\": \"1,995\",\r
+
+    \  \"location\": \"Paris, France\"\r
+
+    }"
+order: 1788264594689

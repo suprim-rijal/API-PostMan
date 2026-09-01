@@ -1,0 +1,9 @@
+$kind: http-request
+name: Partially Update the Tour
+description: ""
+url: http://localhost:4000/tours/4
+method: PATCH
+body:
+  type: json
+  content: "{\r\n  \"price\": \"2,095\"\r\n}"
+order: 4380776408401894

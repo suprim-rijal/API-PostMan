@@ -1,0 +1,6 @@
+$kind: http-request
+name: Get All Tours
+description: ""
+url: http://localhost:4000/tours
+method: GET
+order: 4503061689562559
