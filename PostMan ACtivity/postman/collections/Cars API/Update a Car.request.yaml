@@ -1,0 +1,8 @@
+$kind: http-request
+description: ""
+url: http://localhost:4000/cars/1
+method: PUT
+body:
+  type: json
+  content: "{\r\n    \"age\":4\r\n}"
+order: 3857866314481694
