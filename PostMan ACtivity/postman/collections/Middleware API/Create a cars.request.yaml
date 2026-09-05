@@ -1,0 +1,8 @@
+$kind: http-request
+description: ""
+url: http://localhost:4000/cars
+method: POST
+body:
+  type: json
+  content: '{"model": "Toyota Camry", "color": "Blue", "age": 3}'
+order: 1788559192736
