@@ -1,0 +1,16 @@
+$kind: http-request
+description: ""
+url: http://localhost:4000/api/blogs/6aa5a7afc2b0564a6e0823bc
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \  \"title\": \"Completely Replaced Title\",\r
+
+    \  \"body\": \"This body has entirely overwritten the previous record fields.\",\r
+
+    \  \"author\": \"Suprim Rijal\"\r
+
+    }"
+order: 4401888777430338

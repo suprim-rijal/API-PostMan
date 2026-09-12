@@ -1,0 +1,5 @@
+$kind: http-request
+description: ""
+url: http://localhost:4000/api/users/6aa5a972c2b0564a6e0823bd
+method: DELETE
+order: 4483563702242006

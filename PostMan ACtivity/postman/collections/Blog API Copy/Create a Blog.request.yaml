@@ -1,0 +1,16 @@
+$kind: http-request
+description: ""
+url: http://localhost:4000/api/blogs
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \  \"title\": \"Mastering Mongoose Validation\",\r
+
+    \  \"body\": \"Adding validation and error handling makes robust APIs.\",\r
+
+    \  \"author\": \"Suprim Rijal\"\r
+
+    }"
+order: 2955690781941998

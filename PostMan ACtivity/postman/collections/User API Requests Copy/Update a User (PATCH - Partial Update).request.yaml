@@ -1,0 +1,8 @@
+$kind: http-request
+description: ""
+url: http://localhost:4000/api/users/6aa5a972c2b0564a6e0823bd
+method: PATCH
+body:
+  type: json
+  content: "{\r\n  \"age\": 27\r\n}"
+order: 4489780679752531

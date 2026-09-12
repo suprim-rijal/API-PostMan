@@ -1,0 +1,20 @@
+$kind: http-request
+description: ""
+url: http://localhost:4000/api/users/6aa5a972c2b0564a6e0823bd
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \  \"name\": \"Jane Smith\",\r
+
+    \  \"username\": \"janesmith\",\r
+
+    \  \"password\": \"newpassword123\",\r
+
+    \  \"address\": \"789 Park Ave\",\r
+
+    \  \"age\": 26\r
+
+    }"
+order: 4498054838899860
