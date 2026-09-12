@@ -1,0 +1,20 @@
+$kind: http-request
+description: ""
+url: http://localhost:4000/api/users
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \  \"name\": \"John Doe\",\r
+
+    \  \"username\": \"johndoe\",\r
+
+    \  \"password\": \"securepassword123\",\r
+
+    \  \"address\": \"123 Main St\",\r
+
+    \  \"age\": 28\r
+
+    }"
+order: 4185584751119370
