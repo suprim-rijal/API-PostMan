@@ -1,0 +1,20 @@
+$kind: http-request
+description: ""
+url: http://localhost:4000/api/tours?admin=true
+method: POST
+queryParams:
+  admin: "true"
+body:
+  type: json
+  content: "{\r
+
+    \  \"name\": \"Northern Lights Expedition\",\r
+
+    \  \"duration\": 5,\r
+
+    \  \"difficulty\": \"medium\",\r
+
+    \  \"price\": 1200\r
+
+    }"
+order: 821102889904208

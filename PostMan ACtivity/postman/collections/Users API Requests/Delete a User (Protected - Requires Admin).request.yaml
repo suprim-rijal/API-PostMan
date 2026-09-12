@@ -1,0 +1,7 @@
+$kind: http-request
+description: ""
+url: http://localhost:4000/api/users/1?admin=true
+method: DELETE
+queryParams:
+  admin: "true"
+order: 4402182304325230

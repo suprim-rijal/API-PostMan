@@ -1,0 +1,30 @@
+$kind: http-request
+description: ""
+url: http://localhost:4000/api/users?admin=true
+method: POST
+queryParams:
+  admin: "true"
+body:
+  type: json
+  content: "{\r
+
+    \  \"name\": \"Matti Seppänen\",\r
+
+    \  \"email\": \"matti@example.com\",\r
+
+    \  \"password\": \"M@45mtg$\",\r
+
+    \  \"phone_number\": \"+358401234567\",\r
+
+    \  \"gender\": \"Male\",\r
+
+    \  \"date_of_birth\": \"2000-01-15\",\r
+
+    \  \"membership_status\": \"Active\",\r
+
+    \  \"account_verified\": true,\r
+
+    \  \"country\": \"Finland\"\r
+
+    }"
+order: 2193870768068640
