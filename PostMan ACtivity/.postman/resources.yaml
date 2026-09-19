@@ -2,6 +2,12 @@
 workspace:
   id: 31bc7f5e-d895-4881-881f-72e3b9d9649e
 
+# Each entry here maps a local resource to one or more corresponding objects in Postman Cloud
+
+cloudResources:
+  collections:
+    ../postman/collections/RootBridge Sprint 2 API: dd59b44e-c4c4-493a-acf2-8d2a4d3d689f
+
 # All resources in the `postman/` folder are automatically registered in Local View.
 # Point to additional files outside the `postman/` folder to register them individually. Example:
 #localResources:

@@ -1,0 +1,14 @@
+$kind: http-request
+description: ""
+url: http://localhost:4000/api/tours/6aaeb89f76279a4a5273d802
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \  \"image\": \"https://www.course-api.com/images/tours/tour-1.jpeg\",\r
+
+    \  \"price\": \"2,295\"\r
+
+    }"
+order: 4410123869106592

@@ -1,0 +1,21 @@
+$kind: http-request
+url: "{{baseUrl}}/api/contact"
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: json
+  content: |-
+    {
+      "name": "Sita Sharma",
+      "email": "family@demo.com",
+      "subject": "Question",
+      "message": "When does the Culture path get audio?"
+    }
+scripts:
+  - type: afterResponse
+    code: |-
+      pm.test('Status is 2xx', () => pm.response.to.be.success);
+      pm.test('success is true', () => pm.expect(pm.response.json().success).to.eql(true));
+    language: text/javascript
+order: 1000

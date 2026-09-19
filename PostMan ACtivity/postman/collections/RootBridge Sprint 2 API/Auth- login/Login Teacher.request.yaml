@@ -1,0 +1,21 @@
+$kind: http-request
+url: "{{baseUrl}}/api/auth/login"
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: json
+  content: |-
+    {
+      "email": "teacher@demo.com",
+      "password": "demo123",
+      "role": "Teacher"
+    }
+scripts:
+  - type: afterResponse
+    code: |-
+      pm.test('Status is 2xx', () => pm.response.to.be.success);
+      pm.test('success is true', () => pm.expect(pm.response.json().success).to.eql(true));
+      pm.test('role is Teacher', () => pm.expect(pm.response.json().user.role).to.eql('Teacher'));
+    language: text/javascript
+order: 3000

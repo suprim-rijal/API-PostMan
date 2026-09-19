@@ -1,0 +1,23 @@
+$kind: http-request
+name: Login Child/Parent
+url: "{{baseUrl}}/api/auth/login"
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: json
+  content: |-
+    {
+      "email": "family@demo.com",
+      "password": "demo123",
+      "role": "CombinedChildParent"
+    }
+scripts:
+  - type: afterResponse
+    code: |-
+      pm.test('Status is 2xx', () => pm.response.to.be.success);
+      pm.test('success is true', () => pm.expect(pm.response.json().success).to.eql(true));
+      pm.test('role is CombinedChildParent', () => pm.expect(pm.response.json().user.role).to.eql('CombinedChildParent'));
+      pm.test('child is Aarav', () => pm.expect(pm.response.json().user.details.parentSettings.childName).to.eql('Aarav'));
+    language: text/javascript
+order: 1000

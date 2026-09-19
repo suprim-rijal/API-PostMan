@@ -1,0 +1,22 @@
+$kind: http-request
+url: "{{baseUrl}}/api/auth/signup"
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: json
+  content: |-
+    {
+      "name": "Priya Rai",
+      "email": "priya.{{$timestamp}}@example.com",
+      "password": "secret1",
+      "role": "NormalUser"
+    }
+scripts:
+  - type: afterResponse
+    code: |-
+      pm.test('Status is 2xx', () => pm.response.to.be.success);
+      pm.test('success is true', () => pm.expect(pm.response.json().success).to.eql(true));
+      pm.test('role is NormalUser', () => pm.expect(pm.response.json().user.role).to.eql('NormalUser'));
+    language: text/javascript
+order: 2000

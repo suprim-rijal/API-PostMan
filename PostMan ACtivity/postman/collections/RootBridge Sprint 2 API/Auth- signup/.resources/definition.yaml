@@ -1,0 +1,3 @@
+$kind: collection
+name: "Auth: signup"
+order: 4000

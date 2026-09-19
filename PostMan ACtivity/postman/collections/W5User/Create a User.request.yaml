@@ -1,0 +1,28 @@
+$kind: http-request
+description: ""
+url: http://localhost:4000/api/users
+method: POST
+body:
+  type: json
+  content: "  {\r
+
+    \  \"name\": \"Matti Seppänen\",\r
+
+    \  \"email\": \"matti@example.com\",\r
+
+    \  \"password\": \"M@45mtg$\",\r
+
+    \  \"phone_number\": \"+358401234567\",\r
+
+    \  \"gender\": \"Male\",\r
+
+    \  \"date_of_birth\": \"2000-01-15\",\r
+
+    \  \"membership_status\": \"Active\",\r
+
+    \  \"account_verified\": true,\r
+
+    \  \"company\": \"Nordic Travel Ltd\"\r
+
+    \  }"
+order: 1789836175732

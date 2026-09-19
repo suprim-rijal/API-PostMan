@@ -1,0 +1,5 @@
+$kind: http-request
+description: ""
+url: http://localhost:4000/api/tours/6aaeb89f76279a4a5273d802
+method: GET
+order: 916571408872766

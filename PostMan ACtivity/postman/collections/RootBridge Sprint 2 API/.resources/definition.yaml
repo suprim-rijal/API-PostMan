@@ -1,0 +1,9 @@
+$kind: collection
+description: |-
+  Start the backend with `npm run dev` first. baseUrl = http://localhost:5000.
+
+  Roles (role menu): CombinedChildParent (Child/Parent), NormalUser (Normal), Teacher, Admin.
+  Demo accounts (password not checked in Sprint 2): family@demo.com, learner@demo.com, teacher@demo.com, admin@demo.com.
+  Signup requests use {{$timestamp}} so every run creates new emails.
+variables:
+  baseUrl: http://localhost:5000

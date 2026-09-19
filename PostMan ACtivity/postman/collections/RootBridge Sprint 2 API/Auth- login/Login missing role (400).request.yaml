@@ -1,0 +1,19 @@
+$kind: http-request
+url: "{{baseUrl}}/api/auth/login"
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: json
+  content: |-
+    {
+      "email": "family@demo.com",
+      "password": "demo123"
+    }
+scripts:
+  - type: afterResponse
+    code: |-
+      pm.test('Status is 400', () => pm.response.to.have.status(400));
+      pm.test('success is false', () => pm.expect(pm.response.json().success).to.eql(false));
+    language: text/javascript
+order: 6000

@@ -1,0 +1,22 @@
+$kind: http-request
+name: Signup Child/Parent without child name (400)
+url: "{{baseUrl}}/api/auth/signup"
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: json
+  content: |-
+    {
+      "name": "Maya Rai",
+      "email": "maya2@example.com",
+      "password": "secret1",
+      "role": "CombinedChildParent"
+    }
+scripts:
+  - type: afterResponse
+    code: |-
+      pm.test('Status is 400', () => pm.response.to.have.status(400));
+      pm.test('success is false', () => pm.expect(pm.response.json().success).to.eql(false));
+    language: text/javascript
+order: 4000

@@ -1,0 +1,26 @@
+$kind: http-request
+description: ""
+url: http://localhost:4000/api/tours
+method: POST
+body:
+  type: json
+  content: "  {\r
+
+    \  \"name\": \"Adventures in Tokyo - 5 Day Tour\",\r
+
+    \  \"info\": \"Discover the vibrant mix of tradition and modernity in Tokyo. Visit ancient temples like Senso-ji, explore futuristic districts such as Shibuya and Akihabara, and enjoy authentic Japanese cuisine from sushi to ramen. Guided tours will take you through bustling markets, serene gardens, and hidden alleyways filled with local charm.\",\r
+
+    \  \"image\": \"https://tx00-web-en.github.io/resources/img/tours/tour-2.jpeg\",\r
+
+    \  \"price\": \"1,450\",\r
+
+    \  \"duration\": \"5 days\",\r
+
+    \  \"rating\": 4.8,\r
+
+    \  \"season\": \"Spring 2027\",\r
+
+    \  \"specialOffer\": \"Early bird discount 10%\"\r
+
+    \  }"
+order: 4493260543978346

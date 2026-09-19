@@ -1,0 +1,16 @@
+$kind: http-request
+description: ""
+url: http://localhost:4000/api/users/6aaebad1bfa6222d8c3fb19f
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \  \"email\": \"matti.seppanen@example.com\",\r
+
+    \  \"password\": \"Matti2@1234\",     \r
+
+    \  \"phone_number\": \"+358401234567\"\r
+
+    }"
+order: 4448794585143935

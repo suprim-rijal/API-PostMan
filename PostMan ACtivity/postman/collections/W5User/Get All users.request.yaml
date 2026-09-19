@@ -1,0 +1,5 @@
+$kind: http-request
+description: ""
+url: http://localhost:4000/api/users/6aaebad1bfa6222d8c3fb19f
+method: GET
+order: 3406696760471679
