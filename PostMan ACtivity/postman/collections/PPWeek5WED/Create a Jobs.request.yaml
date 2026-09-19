@@ -1,0 +1,30 @@
+$kind: http-request
+description: ""
+url: http://localhost:4000/api/jobs
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \          \"title\": \"Senior React Developer\",\r
+
+    \          \"type\": \"Full-time\",\r
+
+    \          \"description\": \"Build modern user interfaces.\",\r
+
+    \          \"location\": \"Helsinki\",\r
+
+    \          \"salary\": 6000,\r
+
+    \          \"company\": {\r
+
+    \            \"name\": \"TechCorp\",\r
+
+    \            \"contactEmail\": \"hr@techcorp.fi\",\r
+
+    \            \"contactPhone\": \"123456789\"\r
+
+    \          }\r
+
+    \        }"
+order: 1789848200621

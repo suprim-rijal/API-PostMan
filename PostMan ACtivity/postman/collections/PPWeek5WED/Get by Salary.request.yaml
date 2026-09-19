@@ -1,0 +1,8 @@
+$kind: http-request
+description: ""
+url: http://localhost:4000/api/jobs/salary?min=5000&max=7000
+method: GET
+queryParams:
+  min: "5000"
+  max: "7000"
+order: 3965569250198778
