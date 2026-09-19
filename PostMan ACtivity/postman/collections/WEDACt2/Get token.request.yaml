@@ -1,0 +1,9 @@
+$kind: http-request
+description: ""
+url: http://localhost:3001/api/protectedroute
+method: GET
+auth:
+  type: bearer
+  credentials:
+    token: f8316343-06f9-4fb6-995b-be746d28acc0
+order: 1575864131255252
